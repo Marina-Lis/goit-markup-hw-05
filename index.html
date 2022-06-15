@@ -24,7 +24,7 @@
             <nav class="header-nav">
                 <a href="./index.html" class="header-logo link"><span>Web</span>Studio</a>
                 <ul class="header-list list">
-                    <li class="header-item"><a class="header-link  link" href="./studio.html">Студия</a></li>
+                    <li class="header-item"><a class="header-link curent link" href="./index.html">Студия</a></li>
                     <li class="header-item"><a class="header-link  link" href="./portfolio.html">Портфолио</a></li>
                     <li class="header-item"><a class="header-link  link" href="">Контакты</a></li>
                 </ul>
@@ -54,7 +54,7 @@
         <section class="hero">
             <div class="container hero-content">
                 <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-btn">Заказать услугу</button>
+                <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="pref">
@@ -106,12 +106,21 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="ocupation-list list">
-                    <li class="ocupation-item"><img src="./images/box_1.jpg" alt="фото синхронизации iPad & iMac"
-                            width="370" height="294"></li>
-                    <li class="ocupation-item"><img src="./images/box_2.jpg" alt="фото синхронизации iPhone & notebook"
-                            width="370" height="294"></li>
-                    <li class="ocupation-item"><img src="./images/box_3.jpg" alt="фото синхронизации iPad & notebook"
-                            width="370" height="294"></li>
+                    <li class="ocupation-item">
+                        <img src="./images/box_1.jpg" alt="фото синхронизации iPad & iMac"
+                            width="370" height="294">
+                        <p class="ocupation-text">Десктопные приложения</p>
+                        </li>
+                    <li class="ocupation-item">
+                        <img src="./images/box_2.jpg" alt="фото синхронизации iPhone & notebook"
+                            width="370" height="294">
+                            <p class="ocupation-text">Мобильные приложения</p>
+                        </li>
+                    <li class="ocupation-item">
+                        <img src="./images/box_3.jpg" alt="фото синхронизации iPad & notebook"
+                            width="370" height="294">
+                        <p class="ocupation-text">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -312,6 +321,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal >
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-icon" width="11" height="11">
+                    <use href="./images/symbol-defs.svg#icon-Vector-2-1"></use>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
